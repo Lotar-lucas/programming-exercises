@@ -1,12 +1,9 @@
 // Descrição da função
+//Exercício realizado em hacker rank.
 
 // Faça a função aVeryBigSum. Deve retornar a soma de todos os elementos do array.
-
 // aVeryBigSum tem os seguintes parâmetros:
-
 // int ar[n] : uma matriz de inteiros.
-
-//Exeer
 
 
 const aVeryBigSum = ( arrayOfInt ) => {
