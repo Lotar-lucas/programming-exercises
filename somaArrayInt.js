@@ -11,6 +11,7 @@ const aVeryBigSum = ( arrayOfInt ) => {
 
     if (typeof arrayOfInt === 'number') {
         acumulator += arrayOfInt;
+        
     }
 
     if (typeof arrayOfInt === 'object' && arrayOfInt.length && (arrayOfInt.length >= 0 || arrayOfInt.length <= 11 )) {
