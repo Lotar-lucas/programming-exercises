@@ -19,9 +19,7 @@
 
 const calculatesAreacircle = (data) => {
    const area = (3.14159 * (data ** 2)).toFixed(4);
-  //  const formatArea = area.toFixed(4);
    return `A=${area}`
-
 }
 
 console.log(calculatesAreacircle(100.64))
