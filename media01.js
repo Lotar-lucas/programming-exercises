@@ -12,13 +12,24 @@
 // Ecxemplo de entrada:
 // 5.0 / 7.1 -> MEDIA = 6.43182
 
-const averageScores = (grade1, grade2) => {
-  parse
+// const input = require('fs').readFileSync('/dev/stdin', 'utf8');
+// const lines = input.split('\n');
 
-  const result = ((grade1 + grade2) / 2).toFixed(5)
-  console.log('M' , result)
+const averageScores = (grade1, grade2) => {
+  const weightNote1 = 3.5
+  const weightNote2 = 7.5
+
+  const equivalentNote1 = (weightNote1 * grade1) /  100
+  const equivalentNote2 = (weightNote2 * grade2) /  100
+
+  console.log('M' , equivalentNote1 , equivalentNote2,  equivalentNote1 + equivalentNote2 )
+
+  const result = (equivalentNote1 + equivalentNote2) / 2
+
+  
 
   return `MEDIA = ${result}`
 }
 
 console.log(averageScores(5.0, 7.1))
+// regra de 3
