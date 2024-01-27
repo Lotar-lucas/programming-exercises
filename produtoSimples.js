@@ -4,19 +4,21 @@
 // Entrada
 // O arquivo de entrada contém 2 valores inteiros.
 
-
 // Saída
 // Imprima a mensagem "PROD" e a variável PROD conforme exemplo abaixo, com um espaço em branco antes e depois da igualdade. Não esqueça de imprimir o fim de linha após o produto, caso contrário seu programa apresentará a mensagem: “Presentation Error”.
 
 
-const input = require('fs').readFileSync('/dev/stdin', 'utf8');
-const lines = input.split('\n');
 
 function calculatesProduct(value1, value2) {
-  if ((Number(value1) && Number(value2)) && (value1 > 0 && value2 > 0)) {
-    return `PROD = ${value1 * value2}`
+  if (value1 === 0) {
+    return `PROD = ${value1}` 
+  } 
+  if (value2 === 0) {
+    return `PROD = ${value2}` 
   }
+  return `PROD = ${value1 * value2}` 
 }
 
-calculatesProduct(input)
+console.log(calculatesProduct(-30, 10))
+
 // NÃO FINALIZADO
