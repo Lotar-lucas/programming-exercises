@@ -1,0 +1,8 @@
+const input = require('fs').readFileSync('/dev/stdin', 'utf8');
+const lines = input.split('\n');
+
+function função_criada(data) {
+     ...logic
+}
+
+console.log(função_criada(input))
